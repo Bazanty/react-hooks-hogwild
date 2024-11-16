@@ -10,7 +10,7 @@ function Card({ name, specialty, greased, weight, highest, image }) {
         setShowDetails(!showDetails);
     };
 
-    // Function to handle hiding the tile
+    // Function to handle hiding the Card
     const handleHideCard = () => {
         setHideCard(true);
     };
@@ -19,7 +19,7 @@ function Card({ name, specialty, greased, weight, highest, image }) {
 
     return (
         <div className="ui four wide column">
-            <div className="ui fluid card pigTile">
+            <div className="ui fluid card">
                 <div className="image">
                     <img
                         src={image}

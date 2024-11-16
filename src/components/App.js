@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
 import hogs from '../porkers_data';
-import Card from './Cards';
-
 import HogForm from './Form';
 import Sort from './Sort';
+import Card from './Card';
 
 function App() {
     const [option, setOption] = useState('none');
     const [hogList, setHogList] = useState(hogs);
     const [showGreased, setShowGreased] = useState(false);
-
 
     const handleSortChange = (e) => {
         setOption(e.target.value);
